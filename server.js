@@ -176,7 +176,7 @@ function oauthFlowCompleted(state, access_token, refresh_token, res) {
     // Retreive user name: GET https://api.ciscospark.com/v1/people/me
     var options = {
         method: 'GET',
-        url: 'https://api.ciscospark.com/v1/rooms/me',
+        url: 'https://api.ciscospark.com/v1/rooms/',
         headers:
         {
             "authorization": "Bearer " + access_token
